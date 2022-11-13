@@ -1,0 +1,159 @@
+html {
+    background-color: #020659;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #020873;
+    width: 375px;
+}
+
+header {
+    background-color: ;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+/* for menu hamburger nav button*/
+nav {
+    grid-row: 1/2;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+
+
+
+#smoothjazz {
+    background-color: #030A8C;
+    padding: 0px 20px;
+}
+
+#trending {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: scroll;
+}
+
+#trending:first-child{
+    grid-row: 1/2;
+}
+
+#trending > section {
+    grid-row: 2/8;
+}
+
+#trending::-webkit-scrollbar {
+    width: 0px;
+
+}
+#trending::-webkit-scrollbar-track {
+    background-color: rgb(240, 166, 166);
+}
+
+#trending::-webkit-scrollbar-thumb {
+    background-color: rgb(106, 0, 0);
+    
+}
+
+#trending::-webkit-scrollbar-thumb:hover {
+    background-color:  rgb(173, 5, 5);
+}
+
+.song {
+    width: 340px;
+    height: 300px;
+}
+
+
+main {
+    background-color: white;
+}
+
+#your_playlist {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: scroll;
+}
+
+#your_playlist:first-child{
+    grid-row: 1/2;
+}
+
+#your_playlist > section {
+    grid-row: 2/8;
+}
+
+#your_playlist::-webkit-scrollbar {
+    width: 0px;
+
+}
+#your_playlist::-webkit-scrollbar-track {
+    background-color: rgb(240, 166, 166);
+}
+
+#your_playlist::-webkit-scrollbar-thumb {
+    background-color: rgb(106, 0, 0);
+    
+}
+
+#your_playlist::-webkit-scrollbar-thumb:hover {
+    background-color:  rgb(173, 5, 5);
+}
+
+#curated_playlists {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: scroll;
+}
+
+#curated_playlists:first-child{
+    grid-row: 1/2;
+}
+
+#curated_playlists > section {
+    grid-row: 2/8;
+}
+
+#curated_playlists::-webkit-scrollbar {
+    width: 0px;
+
+}
+#curated_playlists::-webkit-scrollbar-track {
+    background-color: rgb(240, 166, 166);
+}
+
+#curated_playlists::-webkit-scrollbar-thumb {
+    background-color: rgb(106, 0, 0);
+    
+}
+
+#curated_playlists::-webkit-scrollbar-thumb:hover {
+    background-color:  rgb(173, 5, 5);
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:834px) {
+    body {
+        width: 834px;
+        padding: 30px;
+    }
+
+
+    
+}
+
+
