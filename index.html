@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -14,161 +17,216 @@
             <p>This station is dedicated to the soothing sounds of smooth jazz. This genre of 
             commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
         </section>
-        <nav>
-            <ul id="menu">
-                <li><label>MuzakMaker</label></li>
-                <li>Trending Songs</li>
-                <li>Your playlists</li>
-                <li>Curated Playlists</li>
-                <li>
-                    <img src="duke-silver.png" alt="">
-                </li>
-            </ul>
-            
-        </nav>
+            <nav>
+                <input class="menu-btn" type="checkbox" id="menu-btn">
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu_" id="menu">
+                    <li id="first_item"><a href="#" >MuzakMaker</a></li>
+                    <li id="second_list" class="rest_list"><a href="#">Trending Songs</a></li>
+                    <li class="rest_list"><a href="#">Your playlists</a></li>
+                    <li class="rest_list"><a href="#">Curated Playlists</a></li>
+                    <li class="rest_list">
+                        <a href="#"><img src="duke-silver.png" alt=""></a>
+                    </li>
+                </ul>
+            </nav>   
     </header>
-<main>
-<section>
-    <h3>Trending Songs</h3>
-    <section id="trending">
-        <section class="song">
-            <h4>Aloma</h4>
-                <dl>
-                    <dt>Artist</dt> 
-                    <dd>Cali</dd>
-                </dl> 
-                <img src="aloma-cover.png" alt="">
-                <audio>aloma.mp3</audio>
+
+    <main>
+        <section >
+            <h2>Trending Songs</h2>
+            <div id="trending">
+                <div class="song">
+                    <figure>
+                        <figcaption>                                
+                            <h3>Aloma</h3>
+                            <dl>
+                                <dt>Artist</dt> 
+                                <dd>Cali</dd>
+                            </dl>
+                        </figcaption>
+                        <div class="image_audio">
+                            <img class="figimage" src="aloma-cover.png" alt="">
+                            <audio
+                                controls
+                                src="aloma.mp3">
+                                    <a href="aloma.mp3">
+                                        Download audio
+                                    </a>
+                            </audio>
+                        </div>
+                    </figure>
+                </div>
+
+                <div class="song">
+                    <figure>
+                        <figcaption>
+                            <h3>My Road</h3>
+                            <dl>
+                                <dt>Artist</dt> 
+                                <dd>Nesterouk</dd>
+                            </dl> 
+                        </figcaption>
+                        <div class="image_audio">
+                            <img src="my-road-cover.png" alt="">
+                            <audio
+                                controls
+                                src="my-road.mp3">
+                                    <a href="my-road.mp3">
+                                        Download audio
+                                    </a>
+                            </audio>
+                        </div>
+                    </figure>
+                </div>
+
+                <div class="song">
+                    <figure>
+                        <figcaption>
+                            <h3>Papaya</h3>
+                            <dl>
+                                <dt>Artist</dt> 
+                                <dd>Dredstudio</dd>
+                            </dl> 
+                        </figcaption>
+                        <div class="image_audio">
+                            <img src="papaya-cover.png" alt="">
+                            <audio
+                                controls
+                                src="papaya.mp3">
+                                    <a href="papaya.mp3">
+                                        Download audio
+                                    </a>
+                            </audio>
+                        </div>
+                    </figure>
+                </div>
+
+                <div class="song">
+                    <figure>
+                        <figcaption>
+                            <h3>Smoothies</h3>
+                            <dl>
+                                <dt>Artist</dt> 
+                                <dd>Black Rhomb</dd>
+                            </dl> 
+                        </figcaption>
+                        <div class="image_audio">
+                            <img src="smoothies-cover.png" alt="">
+                            <audio
+                                controls
+                                src="smoothies.mp3">
+                                    <a href="smoothies.mp3">
+                                        Download audio
+                                    </a>
+                            </audio>
+                        </div>
+                    </figure>
+                </div>
+
+                <div class="song">
+                    <figure>
+                        <figcaption>
+                            <h3>Successful Performance</h3>
+                            <dl>
+                                <dt>Artist</dt> 
+                                <dd>Ricky Bombino</dd>
+                            </dl> 
+                        </figcaption>
+                        <div class="image_audio">
+                            <img src="successful-performance-cover.png" alt="">
+                            <audio
+                                controls
+                                src="successful-performance.mp3">
+                                    <a href="successful-performance.mp3">
+                                        Download audio
+                                    </a>
+                            </audio>
+                        </div>
+                    </figure>           
+                </div>
+            </div>
         </section>
 
-        <section class="song">
-            <h4>My Road</h4>
-            <dl>
-                <dt>Artist</dt> 
-                <dd>Nesterouk</dd>
-            </dl>
-            <img src="my-road-cover.png" alt="">
-            <audio>my-road.mp3</audio>
-        </section>
+            <button class="more_trending" type="button">
+                More trending
+            </button>
 
-        <section class="song">
-            <h4>Papaya</h4>
-            <dl>
-                <dt>Artist</dt> 
-                <dd>Dredstudio</dd>
-            </dl>
-            <img src="papaya-cover.png" alt="">
-            <audio>papaya.mp3</audio>
-        </section>
+        <div id="query_vertical_scroll">
+            <section>
+                <h2>Your Playlists</h2>
+                <div id="your_playlist">
+                    <section class="YPCP_sect_1">
+                        <img src="best-of-2020-cover.png" alt="#">
+                        <h3>Best of 2020</h3>
+                        <p>The music that got you through the lock down.</p>
+                    </section>
 
-        <section class="song">
-            <h4>Smoothies</h4>
-            <dl>
-                <dt>Artist</dt> 
-                <dd>Black Rhomb</dd>
-            </dl>
+                    <section class="YPCP_sect_2">
+                        <img src="pumpkin-spice-cover.png" alt="">
+                        <h3>Pumpkin Spice</h3>
+                        <p>Creamy and spicy, just like your favorite autumnal latte.</p>
+                    </section>
 
-        <img src="smoothies-cover.png" alt="">
-        <audio>
-            smoothies.mp3
-        </audio>
-        </section>
+                    <section class="YPCP_sect_3">
+                        <img src="quiet-storm-cover.png" alt="">
+                        <h3>Quiet Storm</h3>
+                        <p>Slow tempos and relaxed rhythms.</p>
+                    </section>
+                    
+                    <section class="YPCP_sect_4">
+                        <img src="smooth-jazz-cover.png" alt="">
+                        <h3>Smooth Jazz</h3>
+                        <p>The pioneers of smooth jazz</p>
+                    </section>
 
-        <section>
-            <h4>Successful Performance</h4>
-            <dl>
-                <dt>Artist</dt>
-                <dd>Ricky Bombino</dd>
-            </dl> 
-            <img src="successful-performance-cover.png" alt="">
-            <audion>
-                successful-performance.mp3
-            </audion>
-            
-        </section>
-    </section>
-</section>
-
-<section>
-    <button class="" type="button">
-        More trending
-    </button>
-</section>
-
-<section>
-    <h3>Your Playlists</h3>
-    <section id="your_playlist">
-        <section>
-            <img src="best-of-2020-cover.png" alt="#">
-            <h4>Best of 2020</h4>
-            <p>The music that got you through the lock down.</p>
-        </section>
-
-        <section>
-            <img src="pumpkin-spice-cover.png" alt="">
-            <h4>Pumpkin Spice</h4>
-            <p>Creamy and spicy, just like your favorite autumnal latte.</p>
-        </section>
-
-        <section>
-            <img src="quiet-storm-cover.png" alt="">
-            <h4>Quiet Storm</h4>
-            <p>Slow tempos and relaxed rhythms.</p>
-        </section>
-        
-        <section>
-            <img src="smooth-jazz-cover.png" alt="">
-            <h4>Smooth Jazz</h4>
-            <p>The pioneers of smooth jazz</p>
-        </section>
-
-        <section>
-            <img src="smooth-study-cover.png" alt="">
-            <h4>Smooth Study</h4>
-            <p>Background music to keep you going while you study.</p>
-        </section>
-    </section> 
-    <section>
-        <button class="" type="button">
-            All your playlists
-        </button>
-    </section>
-</section>
+                    <section class="YPCP_sect_5">
+                        <img src="smooth-study-cover.png" alt="">
+                        <h3>Smooth Study</h3>
+                        <p>Background music to keep you going while you study.</p>
+                    </section>
+                </div> 
+                <button class="" type="button">
+                    All your playlists
+                </button>    
+            </section>
 
 
-<section>
-    <h3>Curated Playlists</h3>
-    <section id="curated_playlists">
-        <section>
-            <img src="Boozy-brunch-cover.png" alt="">
-            <h4>Boozey Brunch</h4>
-            <p>Light up the afternoon with these energetic hits. </p>
-        </section>
-        <section>
-            <img src="dinner-party-cover.png" alt="">
-            <h4>Dinner Party</h4>
-            <p>Background music to give your party life, but allow your guests to chat. </p>
-        </section>
-        <section>
-            <img src="mellow-cover.png" alt="">
-            <h4>Mellow</h4>
-            <p>Relax after a stressful day with this collection of extra smooth jazz.</p>
-        </section>
-        <section>
-            <img src="jazz-chill-cover.png" alt="">
-            <h4>Jazz and Chill</h4>
-            <p>Set the mood with these silky sounds.</p>
-        </section>
-        <section>
-            <img src="smooth-saxophone-cover.png" alt="">
-            <h4>Jazz Saxophone</h4>
-            <p>The greatest collection of your sax favorites.</p>
-        </section>
-    </section>
-    <a href="#">More curated</a>
-</section>
-
-</main>
+            <section>
+                <h2>Curated Playlists</h2>
+                <div id="curated_playlists">
+                    <section class="YPCP_sect_1">
+                        <img src="Boozy-brunch-cover.png" alt="">
+                        <h3>Boozey Brunch</h3>
+                        <p>Light up the afternoon with these energetic hits. </p>
+                    </section>
+                    <section class="YPCP_sect_2">
+                        <img src="dinner-party-cover.png" alt="">
+                        <h3>Dinner Party</h3>
+                        <p>Background music to give your party life, but allow your guests to chat. </p>
+                    </section>
+                    <section class="YPCP_sect_3">
+                        <img src="mellow-cover.png" alt="">
+                        <h3>Mellow</h3>
+                        <p>Relax after a stressful day with this collection of extra smooth jazz.</p>
+                    </section>
+                    <section class="YPCP_sect_4">
+                        <img src="jazz-chill-cover.png" alt="">
+                        <h3>Jazz and Chill</h3>
+                        <p>Set the mood with these silky sounds.</p>
+                    </section>
+                    <section class="YPCP_sect_5">
+                        <img src="smooth-saxophone-cover.png" alt="">
+                        <h3>Jazz Saxophone</h3>
+                        <p>The greatest collection of your sax favorites.</p>
+                    </section>
+                </div>
+                <button class="" type="button">
+                    More curated
+                </button>
+            </section>
+        </div>
+    </main>
 
 <footer>
     <p>Copyright 2022 Smooth Jazz</p>
