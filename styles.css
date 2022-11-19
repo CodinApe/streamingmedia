@@ -53,7 +53,7 @@ ul li a:visited {
 ul #first_item {
     position: absolute;
     top: 10px;
-    right: 100px;
+    right: 80px;
     padding: 15px;
 
 }
@@ -124,7 +124,6 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     grid-row: 2/4;
     margin-top: -40px;
 }
-
 
 
 figure {
@@ -319,7 +318,7 @@ footer {
 
     #smoothjazz {
         grid-row: 2/3;
-        margin-top: -45px;
+        margin-top: -40px;
     }
 
 
@@ -388,6 +387,10 @@ footer {
         margin-top: 25px;
         padding: 5px;
         text-align: center;
+    }
+
+    #your_playlist section:hover, #curated_playlists section:hover {
+        background-color: #590242;
     }
 
     button {
@@ -475,7 +478,7 @@ li {
 
 ul #first_item {
     font-variant: small-caps;
-    font-size: 20pt;
+    font-size: 25pt;
     text-transform: none;
     font-weight: bold;
 }
