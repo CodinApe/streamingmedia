@@ -265,6 +265,10 @@ main {
     background-color:  rgb(173, 5, 5);
 }
 
+#your_playlist section:hover, #curated_playlists section:hover {
+    background-color: #590242;
+}
+
 footer {
     background-color: white;
     padding: 20px;
@@ -387,10 +391,6 @@ footer {
         margin-top: 25px;
         padding: 5px;
         text-align: center;
-    }
-
-    #your_playlist section:hover, #curated_playlists section:hover {
-        background-color: #590242;
     }
 
     button {
